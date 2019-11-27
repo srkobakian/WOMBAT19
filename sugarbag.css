@@ -1,0 +1,134 @@
+@import url(https://fonts.googleapis.com/css?family=Arimo:300,400,700,400italic);
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700);
+@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light:400,700);
+
+body { font-family: 'Arimo'; }
+h1, h2, h3, h4{
+  font-family: 'Arimo';
+  font-weight: normal;
+  color: #4f2107;
+}
+a, a > code {
+  color: #d69d6f;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footnote {
+  position: absolute;
+  bottom: 3em;
+  padding-right: 4em;
+  font-size: 50%;
+  colour: #2d4713;
+}
+
+.remark-code-line-highlighted     { 
+  background-color: #fce300 ; }
+
+.remark-slide-content {
+  border-top: 8px solid #a2d3db;
+  border-bottom: 8px solid #a2d3db;
+  border-right: 11px solid #a2d3db;
+  border-left: 11px solid #a2d3db;
+  padding: 1em 2em 1em 2em
+}
+
+.remark-slide-content > h1 {
+  font-weight: normal;
+  margin-top: 10px;
+  margin-left: -00px;
+}
+
+.title-slide .remark-slide-number {
+  display: none;
+}
+
+
+.remark-slide-number {
+  display: none;
+}
+
+.inverse {
+  background-color: #a2d3db;
+  color: #4f2107;
+}
+
+.inverse h1, .inverse h2, .inverse h3 {
+  font-family: 'Arimo';
+  color: #4f2107;
+}
+
+.maps {
+  background-position: 50% 10%;
+  background-size: 70%;
+  background-color: #4C3E36;
+  color: #d69d6f;
+}
+
+.maps h1, .maps h2, .maps h3{
+  font-family: 'Arimo';
+  color: #a2d3db;
+}
+
+.algorithm {
+  background-position: 50% 75%;;
+  background-size: 70%;
+  background-color: #033F37;
+  color: #d69d6f;
+}
+
+.algorithm h1, .algorithm h2, .algorithm h3{
+  font-family: 'Arimo';
+  color: #C7DCE8;
+}
+.table {
+  margin: auto;
+  font-size: 90%;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+}
+
+.title-slide h1 {
+  font-family: 'Arimo';
+  color: #d69d6f;
+  margin-top: -10px;
+}
+
+.title-slide h2 {
+  font-family: 'Arimo';
+  color: #d69d6f;
+}
+
+.title-slide, .title-slide h3 {
+  font-family: 'Arimo';
+  color: #FFEBDB;
+}
+
+
+/* Style/position the footer text */
+#header-footer .slide-footer {
+    position: fixed; 
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+    text-align: center;
+    font-size: 65%;
+}
+
+
+div.my-footer {
+    background-color: #a2d3db;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 20px;
+    width: 100%;
+}
+div.my-footer span {
+    font-size: 10pt;
+    color: #4f2107;
+    position: absolute;
+    left: 15px;
+    bottom: 2px;
+}

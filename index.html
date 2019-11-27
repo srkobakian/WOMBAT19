@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>WOMBAT19</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Stephanie Kobakian" />
+    <link href="libs/font-awesome/css/fontawesome-all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="kunoichi_sugarbag.css" type="text/css" />
+    <link rel="stylesheet" href="ninjutsu_sugarbag.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+class: bottom, right, title-slide
+
+
+&lt;img src="figures/qut_crest.png" style="position:absolute;bottom:15px;right:20px;height:100px;width:100px;" /&gt;
+
+&lt;img src="figures/monash_crest.jpg" style="position:absolute;bottom:15px;right:150px;height:100px;width:100px;" /&gt;
+
+## An Australian alternative
+## to choropleth maps;
+## visualising geo-spatial
+## disease data
+
+### Stephanie Kobakian
+### [srkobakian](https://github.com/srkobakian) <i class="fab  fa-twitter "></i><i class="fab  fa-github "></i> 
+
+
+
+???
+
+Good afternoon,
+My name is Stephanie
+
+---
+
+
+class: bg-main1 split-30 
+
+.column.bg-deep-green[
+]
+.column.bg-green[
+
+# Superisory Team
+&lt;br&gt;
+
+## DProf. Kerrie Mengersen
+
+&lt;br&gt;
+
+## Dr. Earl Duncan 
+
+&lt;br&gt;
+
+## Prof. Di Cook
+
+]
+
+&lt;img src="figures/kerrie-mengersen.jpg" style="position:absolute;top:15px;left:60px;height:200px;width:150px;" /&gt;
+
+&lt;img src="figures/earl-duncan.png" style="position:absolute;top:240px;left:60px;height:200px;width:150px;" /&gt;
+
+&lt;img src="figures/di-cook.png" style="position:absolute;top:465px;left:60px;height:200px;width:150px;" /&gt;
+
+
+&lt;img src="figures/acems_logo.jpg" style="position:absolute;top:465px;right:450px;height:150px;width:350px;" /&gt;
+
+&lt;img src="figures/qut_crest.png" style="position:absolute;top:465px;right:50px;height:150px;width:150px;" /&gt;
+
+&lt;img src="figures/monash_crest.jpg" style="position:absolute;top:465px;right:250px;height:150px;width:150px;" /&gt;
+
+
+
+---
+
+
+class: bg-main1 split-30 
+
+.column.bg-deep-green[
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+Professor Peter Baade
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+Dr Susanna Cramb
+]
+.column.bg-green[
+&lt;br&gt;
+# Motivation
+
+## Australian Cancer Atlas
+
+]
+
+&lt;img src="figures/peter-baade.jpg" style="position:absolute;top:120px;left:80px;height:210px;width:175px;" /&gt;
+
+&lt;img src="figures/susanna-cramb.png" style="position:absolute;top:370px;left:80px;height:210px;width:175px;" /&gt;
+
+
+&lt;img src="figures/atlas.png" style="position:absolute;top:250px;right:125px;height:350px;width:600px;" /&gt;
+
+???
+
+With the help of Dr Peter Baade and Dr Susanna Cramb were key contributors to the Atlas. They also gave a lot of time and effort to help me with my work and my contributions to the Atlas.
+
+ViseR at QUT and The Cancer Caner of Queensland were also extremely valuable contributors.
+
+---
+
+class: bg-deep-green
+
+# Australia
+
+## - Standardised Incidence Rate
+## - Lung cancer
+## - Average for 2010-2014
+## - Males and Females
+
+---
+
+
+class: bg-deep-green, center
+
+
+background-image: url(figures/atlases/australia_lung.png)
+background-position: 50% 85%
+background-size: 60%
+
+ 
+
+# Lung Cancer in Australia
+
+???
+
+What do you learn about Lung cancer in Australia?
+
+Red for Standardised Incidence Rates much higher than Australian Average.
+Yellow arounf the average,
+Dark blue for areas less than the average.
+
+- Red areas in Northern Territory and Northern QLD
+- Red in Tasmania
+- Blue near capital cities
+
+---
+
+class: bg-deep-green, center
+
+
+background-image: url(figures/atlases/australia_lung.png)
+background-position: 50% 85%
+background-size: 60%
+
+ 
+
+
+# Choropleth map
+
+???
+
+What is a choropleth map?
+
+Coloured map, each area has boundaries drawn.
+Colour is determined by the statistic.
+
+---
+
+class: bg-deep-green, center
+
+# Statistical Areas
+
+### - Australian Bureau of Statistics (ABS)
+### - 2148 populated Statistical Areas at Level 2 (SA2s)
+### - SA2 is the smallest area for the release of many ABS statistics
+&lt;br&gt;
+### - Reflect functional areas, communities
+###  (Interact together socially and economically)
+### - Population range of 3,000 to 25,000 persons
+###  (Average population of about 10,000 persons)
+
+---
+
+
+class: bg-deep-green, center
+
+# Online cancer atlases
+
+.pull-left[
+
+&lt;img src="figures/atlases/global_international agency for research on cancer_app3.png" width="500px" height="250px" /&gt;
+
+&lt;img src="figures/atlases/global_the cancer atlas_app4.png" width="500px" height="250px" /&gt;
+
+]
+.pull-right[
+
+&lt;img src="figures/atlases/australia_all cancer.png" width="500px" height="250px" /&gt;
+
+
+&lt;img src="figures/atlases/US_all cancer types_nccd_cdc_app7.png" width="500px" height="250px" /&gt;
+
+]
+
+
+???
+
+Well used in practice
+
+Familiar
+
+Only one new piece of information
+
+---
+
+background-image: url(figures/quote.png)
+background-position: 50% 50%
+background-size: 90%
+
+---
+
+class: bg-deep-green, center
+
+background-image: url(figures/atlases/australia_comparing.png)
+background-position: 50% 70%
+background-size: 80%
+
+# Comparing two areas
+
+---
+
+class: split-60 center
+
+.column.bg-deep-green[.content[
+&lt;br&gt;&lt;br&gt;
+# Choropleth
+
+&lt;img src="figures/aus_ggchoro.png" width="550px" /&gt;
+&lt;br&gt;&lt;br&gt;
+
+.footnote[
+[package: sf](https://cran.r-project.org/web/packages/sf/index.html)
+]
+]]
+.column.bg-main3[.content.middle[
+&lt;br&gt;&lt;br&gt;
+
+#Features:
+&lt;br&gt;&lt;br&gt;
+### - Familiar shapes of areas
+&lt;br&gt;
+### - Familiar boundary relationships
+
+]]
+
+---
+
+class: bg-deep-green, center, middle
+
+# Alternative
+# Options
+
+---
+
+class: split-60 center
+
+.column.bg-deep-green[.content[
+&lt;br&gt;
+# Contiguous 
+# Cartogram
+
+&lt;img src="figures/aus_ggcont.png" width="500px" /&gt;
+&lt;br&gt;&lt;br&gt;
+
+.footnote[
+[package used: cartogram](https://cran.r-project.org/web/packages/cartogram/index.html)
+]
+
+]]
+.column.bg-main3[.content.middle[
+&lt;br&gt;&lt;br&gt;
+
+#Features:
+### - Boundaries stay connected
+### - Shapes change
+### - Provide amount of iterations
+
+#Issue:
+### <i class="fas  fa-times "></i> May not complete within iteration limit
+
+]]
+---
+
+class: split-60 center
+
+.column.bg-deep-green[.content[
+&lt;br&gt;
+# Non - Contiguous 
+# Cartogram
+
+&lt;img src="figures/aus_ggncont.png" width="500px" /&gt;
+&lt;br&gt;&lt;br&gt;
+
+.footnote[
+[package used: cartogram](https://cran.r-project.org/web/packages/cartogram/index.html)
+]
+
+]]
+.column.bg-main3[.content.middle[
+&lt;br&gt;&lt;br&gt;
+
+#Features:
+### - Shapes stay
+### - Boundaries lose connections
+### <i class="fas  fa-check "></i> Completed transformation
+
+
+#Issue:
+### <i class="fas  fa-times "></i> Cannot see the areas
+
+]]
+
+---
+
+
+class: split-60 center
+
+.column.bg-deep-green[.content[
+&lt;br&gt;
+# Dorling 
+# Cartogram
+
+&lt;img src="figures/aus_ggdorl.png" width="500px" /&gt;
+&lt;br&gt;&lt;br&gt;
+
+.footnote[
+[package used: cartogram](https://cran.r-project.org/web/packages/cartogram/index.html)
+]
+
+]]
+.column.bg-main3[.content.middle[
+&lt;br&gt;&lt;br&gt;
+
+#Features:
+### - Shapes are consistent
+### - Boundaries still touch
+### <i class="fas  fa-check "></i> Can see all the areas
+
+
+#Issue:
+### <i class="fas  fa-times "></i> Lost geographic reference
+
+]]
+
+
+---
+
+
+class: bg-deep-green
+# USA 
+
+## Age Adjusted Rate
+## Lung and Bronchus
+## 2012-2016
+## Male and Female	
+
+### The official federal statistics on cancer incidence and deaths
+### [source: Centers for Disease Control and Prevention (CDC) and the National Cancer Institute (NCI).](https://gis.cdc.gov/cancer/USCS/DataViz.html)
+
+---
+
+class: bg-main2, center
+
+background-image: url(figures/ggchoro.png)
+background-position: 50% 50%
+background-size: 75%
+
+# USA: Choropleth
+
+.footnote[
+[package used: sf](https://cran.r-project.org/web/packages/sf/index.html)
+]
+
+???
+
+---
+
+class: bg-main2, center
+
+background-image: url(figures/ggcont.png)
+background-position: 50% 50%
+background-size: 80%
+
+# USA: Contiguous Cartogram
+
+.footnote[
+[package used: cartogram](https://cran.r-project.org/web/packages/cartogram/index.html)
+]
+
+---
+class: bg-main2, center
+
+
+background-image: url(figures/ggncont.png)
+background-position: 50% 50%
+background-size: 80%
+
+# USA: Non-Contiguous Cartogram
+
+.footnote[
+[package used: cartogram](https://cran.r-project.org/web/packages/cartogram/index.html)
+]
+
+---
+class: bg-main2, center
+
+background-image: url(figures/ggdorl.png)
+background-position: 50% 50%
+background-size: 80%
+
+# USA: Dorling Cartogram
+
+.footnote[
+[package used: cartogram](https://cran.r-project.org/web/packages/cartogram/index.html)
+]
+
+---
+
+class: split-60 center
+
+.column.bg-deep-green[.content[
+&lt;br&gt;
+
+# USA: Tilegram
+
+&lt;img src="figures/ggtilegram.png" width="500px" /&gt;
+&lt;br&gt;&lt;br&gt;
+
+.footnote[
+[tilegramR](https://cran.r-project.org/web/packages/tilegramR/index.html)
+]
+
+]]
+.column.bg-main3[.content.middle[
+&lt;br&gt;
+#Features:
+### - Shapes are consistent
+### - Boundaries may still touch
+### <i class="fas  fa-check "></i> Can see all the areas
+### <i class="fas  fa-check "></i> Maintains geographic reference
+
+#Issue:
+### <i class="fas  fa-times "></i> Hand drawn grid
+
+]]
+
+---
+
+class: split-60 center
+
+.column.bg-deep-green[.content[
+&lt;br&gt;
+
+# USA: Geo-Facet map
+
+&lt;img src="figures/ggfacet.png" width="650px" height="400px" /&gt;
+&lt;br&gt;&lt;br&gt;
+
+
+.footnote[
+[geofacet](https://cran.r-project.org/web/packages/geofacet/index.html)
+]
+]
+
+]]
+.column.bg-main3[.content.middle[
+&lt;br&gt;&lt;br&gt;
+#Features:
+### - Any visualisation can be drawn
+### - Boundaries may still touch
+### <i class="fas  fa-check "></i> Can see all the areas
+### <i class="fas  fa-check "></i> Maintains geographic reference
+
+#Issue:
+### <i class="fas  fa-times "></i> Hand drawn grid
+
+]]
+
+---
+
+class: bg-deep-green, center
+
+## International Agency for Research on Cancer
+
+.pull-left[
+
+&lt;img src="figures/atlases/iarc/cancertoday1.png" width="465px" /&gt;
+
+&lt;img src="figures/atlases/iarc/cancertoday2.png" width="465px" /&gt;
+
+]
+.pull-right[
+
+&lt;img src="figures/atlases/iarc/cancertoday3.png" width="465px" /&gt;
+
+
+&lt;img src="figures/atlases/iarc/cancertoday4.png" width="465px" /&gt;
+
+]
+
+---
+
+class: split-50 center
+
+.column.bg-deep-green[.content[
+&lt;br&gt;
+&lt;br&gt;&lt;br&gt;
+# Motivation
+
+## Contrast all communities
+
+&lt;br&gt;
+
+# Population Displays
+
+## - Great alternatives
+## - Shifts the focus
+
+]]
+.column.bg-main4[.content[
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;br&gt;
+# Challenge
+
+## - Hand drawn
+## - Cannot see the areas
+## - May loose geographic reference
+
+]]
+
+---
+
+class: split-50
+
+.column.bg-deep-green[.content[
+&lt;br&gt;
+.center[
+&lt;img src="figures/sugarbag.png" width="500px" /&gt;
+]]]
+.column.bg-main4[.content[
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;br&gt;
+# Challenges
+
+## - Hand drawn
+## - Cannot see the areas
+## - May loose geographic reference
+
+]]
+
+---
+
+class: split-50
+
+.column.bg-deep-green[.content[
+&lt;br&gt;
+.center[
+&lt;img src="figures/sugarbag.png" width="500px" /&gt;
+]]]
+.column.bg-main4[.content[
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;br&gt;
+# Solutions:
+
+## - Algorithm
+## - Focal points
+## - Buffering &amp; angles 
+## - Equally sized areas
+
+]]
+---
+
+class: bg-main2, center
+
+# Tasmania
+
+.pull-left[
+
+&lt;img src="figures/algorithm/tas_centroids.png" width="500px" /&gt;
+]
+.pull-right[
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+## SA2s
+## 98 areas
+]
+
+---
+
+class: bg-main2, center
+
+# Create a square grid
+.pull-left[
+
+&lt;img src="figures/algorithm/tas_1grid.png" width="500px" /&gt;
+]
+.pull-right[
+&lt;br&gt;
+&lt;br&gt;
+## - Equally spaced
+## rows and columns
+## - Covers all centroids
+## - Expands by a buffer zone
+]
+
+
+---
+
+
+class: bg-main2, center
+
+# Create a hexagon grid
+.pull-left[
+
+&lt;img src="figures/algorithm/tas_2hexgrid.png" width="500px" /&gt;
+]
+.pull-right[
+&lt;br&gt;
+&lt;br&gt;
+## - Allows tesselating hexagons
+## - Equally spaced rows
+## - Covers all centroids
+## - Expands by a buffer zone
+]
+
+
+---
+
+class: bg-main2, center
+
+# Strategic buffering
+.pull-left[
+
+&lt;img src="figures/algorithm/tas_3buffer.png" width="500px" /&gt;
+]
+.pull-right[
+&lt;br&gt;
+&lt;br&gt;
+## - Filters within a buffer zone
+## - Allows tesselating hexagons
+## - Equally spaced rows
+## - Covers all centroids
+]
+
+---
+
+class: bg-main2, center, middle
+
+# Set up completed 
+# <i class="fas  fa-check "></i>
+# Ready to allocate
+
+---
+
+class: bg-main2, center
+
+# Allocating
+
+## Provide focal points
+
+&lt;img src="figures/aus_capcities.png" width="600px" /&gt;
+
+---
+
+class: bg-main2, center
+
+# Begin filtering hexagon points
+.pull-left[
+
+&lt;img src="figures/algorithm/tas_4centroid1.png" width="500px" /&gt;
+]
+.pull-right[
+
+&lt;img src="figures/algorithm/tas_5centroid1.png" width="500px" /&gt;
+]
+
+
+---
+class: bg-main2, center
+
+# Angled filter for hexagon points
+.pull-left[
+
+&lt;img src="figures/algorithm/tas_6centroid1.png" width="500px" /&gt;
+]
+.pull-right[
+
+&lt;img src="figures/algorithm/tas_7centroid1.png" width="500px" /&gt;
+]
+
+---
+class: bg-main2, center
+
+# Closest available point
+.pull-left[
+
+&lt;img src="figures/algorithm/tas_7centroid1.png" width="500px" /&gt;
+]
+.pull-right[
+## - Choose closest point
+## - Angle maintains the spatial relationship
+
+]
+
+---
+
+class: bg-main2, center
+
+# Final product
+
+&lt;img src="figures/algorithm/tas_9end.png" width="1000px" /&gt;
+
+---
+
+class: split-50 center
+
+
+.column.bg-deep-green[.content[
+# Lung (persons)
+&lt;img src="figures/cancer/aus_lung_p.png" style="position:absolute;top:40px;left:15px;height:600px;width:600px;" /&gt;
+]]
+.column.bg-deep-green[.content[
+&lt;img src="figures/cancer/aus_lung_p_hex.png" style="position:absolute;top:0px;right:15px;height:700px;width:600px;" /&gt;
+]]
+
+
+---
+
+class: split-50 center
+
+
+.column.bg-deep-green[.content[
+# Liver (females)
+&lt;img src="figures/cancer/aus_liver_f.png" style="position:absolute;top:40px;left:15px;height:600px;width:600px;" /&gt;
+]]
+.column.bg-deep-green[.content[
+&lt;img src="figures/cancer/aus_liver_f_hex.png" style="position:absolute;top:0px;right:15px;height:700px;width:600px;" /&gt;
+]]
+
+---
+
+class: split-50 center
+
+
+.column.bg-deep-green[.content[
+# Liver (males)
+&lt;img src="figures/cancer/aus_liver_m.png" style="position:absolute;top:40px;left:15px;height:600px;width:600px;" /&gt;
+]]
+.column.bg-deep-green[.content[
+&lt;img src="figures/cancer/aus_liver_m_hex.png" style="position:absolute;top:0px;right:15px;height:700px;width:600px;" /&gt;
+]]
+
+---
+
+class: split-50 center
+
+
+.column.bg-deep-green[.content[
+# Melanoma (persons)
+&lt;img src="figures/cancer/aus_melanoma_p.png" style="position:absolute;top:40px;left:15px;height:600px;width:600px;" /&gt;
+]]
+.column.bg-deep-green[.content[
+&lt;img src="figures/cancer/aus_melanoma_p_hex.png" style="position:absolute;top:0px;right:15px;height:700px;width:600px;" /&gt;
+]]
+
+
+---
+
+class: bg-black, center
+
+
+&lt;img src="figures/maps.png" 
+style="position:absolute;bottom:15px;left:50px;height:500px;width:1100px;" /&gt;
+
+ 
+
+# Line up experiment
+
+#### Same data, different display
+
+
+
+???
+position 12, replicate 9
+Is this a better way to present data.
+Lineup protocol: 12 possible locations, one real data set 
+
+Pick the map that is most different?
+---
+
+class: bg-black, center
+
+# Your turn (a)
+&lt;img src="figures/pilot/aus_three_12_hex.png" style="position:absolute;top:100px;left:270px;height:550px;width:700px;" /&gt;
+
+---
+class: bg-black, center
+# Your turn (b)
+&lt;img src="figures/pilot/aus_cities_9_hex.png" style="position:absolute;top:100px;left:270px;height:550px;width:700px;" /&gt;
+
+
+---
+
+
+class: bg-black, center
+
+# Your turn (a) Map 12
+&lt;img src="figures/pilot/aus_three_12_hex.png" style="position:absolute;top:100px;left:270px;height:550px;width:700px;" /&gt;
+
+---
+class: bg-black, center
+# Your turn (b) Map 9
+&lt;img src="figures/pilot/aus_cities_9_hex.png" style="position:absolute;top:100px;left:270px;height:550px;width:700px;" /&gt;
+
+
+---
+class: bg-black, center
+# Your turn (a)
+&lt;img src="figures/pilot/aus_cities_9_geo.png" style="position:absolute;top:100px;left:270px;height:550px;width:700px;" /&gt;
+
+---
+
+class: bg-black, center
+# Your turn (b)
+&lt;img src="figures/pilot/aus_nwse_6_geo.png" style="position:absolute;top:100px;left:270px;height:550px;width:700px;" /&gt;
+
+
+---
+class: bg-black, center
+# Your turn (a) Map 9
+&lt;img src="figures/pilot/aus_cities_9_geo.png"  style="position:absolute;top:100px;left:270px;height:550px;width:700px;" /&gt;
+
+
+---
+class: bg-black, center
+# Your turn (b) Map 6
+&lt;img src="figures/pilot/aus_nwse_6_geo.png" style="position:absolute;top:100px;left:270px;height:550px;width:700px;" /&gt;
+
+
+---
+
+
+
+class: bg-black, center
+&lt;img src="https://github.com/srkobakian/experiment/raw/master/figures/pilot/replicate_change.png"
+style="position:absolute;bottom:15px;left:100px;height:550px;width:1000px;" /&gt;
+
+# Probability of detection 
+---
+
+class: bg-deep-green
+
+# References
+
+1. Dougenik JA, Chrisman NR, Niemeyer DR. An Algorithm to Construct Continuous Area Cartograms. The Professional Geographer 1985;37:75–81. doi:10.1111/j.0033-0124.1985.00075.x.
+1. Olson JM. Noncontiguous Area Cartograms. The Professional Geographer 1976;28:371–80. doi:10.1111/j.0033-0124.1976.00371.x.
+1. Dorling D. Area Cartograms: Their Use and Creation. In:. Concepts and techniques in modern geography (catmog), vol. 59, 2011, pp. 252–60. doi:10.1002/9780470979587.ch33.
+1. Buja, A., D. Cook, and D. Swayne. (1999). “Inference for Data Visualization.” In Talk given at Joint Statistical Meetings. Baltimore, Maryland. Accessed 11 November 2019 from http://www-stat.wharton.upenn.edu/~buja/PAPERS/visual-inference.pdf.
+
+1. Pebesma, E., 2018. Simple Features for R: Standardized Support for
+  Spatial Vector Data. The R Journal 10 (1), 439-446,  https://doi.org/10.32614/RJ-2018-009
+1. H. Wickham. ggplot2: Elegant Graphics for Data Analysis. Springer-Verlag  New York, 2016.
+1. Hadley Wickham (2017). tidyverse: Easily Install and Load the  'Tidyverse'. R package version 1.2.1.
+  https://CRAN.R-project.org/package=tidyverse
+1. Sebastian Jeworutzki (2018). cartogram: Create Cartograms with R. R package version 0.1.1.   https://CRAN.R-project.org/package=cartogram
+1. Bob Rudis (2017). statebins: Create 'U.S.' Uniform Square State Cartogram Heatmaps. R package   version 2.0.0. https://github.com/hrbrmstr/statebins
+
+ 
+&lt;img src="figures/crest.png" style="position:absolute;top:15px;right:20px;height:100px;width:100px;" /&gt;
+
+---
+
+class: bg-deep-green
+
+# With thanks:
+### Prof Di cook
+### Prof Kerrie Mengersen
+### Dr. Earl Duncan
+
+&lt;br&gt;&lt;br&gt;
+### created with xaringan &lt;i class="fas fa-user-ninja"&gt;&lt;/i&gt;
+
+### scripts and data available [srkobakian](https://github.com/srkobakian)
+
+### sugarbag maps [srkobakian/sugarbag](https://github.com/srkobakian/sugarbag)
+
+&lt;br&gt;&lt;br&gt;
+#### This work is under licensed [<i class="fab  fa-creative-commons "></i> BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"ratio": "16:9",
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

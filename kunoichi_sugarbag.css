@@ -1,0 +1,169 @@
+@import url(https://fonts.googleapis.com/css?family=Arimo);
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700);
+
+/******************
+ kunoichi.css must also be coupled with ninjutsu.css to be effective
+ See https://emitanaka.github.io/ninja-theme/kunoichi-theme-example.html for an example.
+
+******************/
+
+
+:root {
+    --main-color1: #1d527a;
+    --main-color2: #18453B;
+    --main-color3: #9FD6FF;
+    --main-color4: #bf7c00;
+    --main-color5: #177e89;
+    --text-color1: #d69d6f;
+    --text-color2: #d69d6f;
+    --text-color3: white;
+    --text-color4: white;
+    --text-color5: black;
+    --text-opacity: white;
+    --link-color: #d69d6f;
+    --alert-color: #ce9e5a;
+    --text-alert: white;
+    --code-background: #d69d6f;
+    --code-inline-color: #18453B;
+    --code-text-color: #18453B;
+    --code-highlight: rgba(136, 57, 138, 0.3);
+    --color-opacity70: rgba(36, 87, 37, 0.7);
+    --color-opacity50: rgba(36, 87, 37, 0.5);
+    --color-opacity30: rgba(36, 87, 37, 0.3);
+    --logo: url("https://github.com/srkobakian/sugarbag/raw/master/man/figures/logo.png");
+}
+
+.title-slide {
+  width: 60%;
+  text-align: right!important;
+  height: 100%;
+  display: table;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #18453B;
+  color: white;
+  padding: 0;
+}
+
+.remark-slide {
+  background-color: var(--main-color3);
+}
+
+.bg-code {
+  color: var(--code-text-color);
+  background-color: var(--code-background);
+}
+
+
+.title-slide h1:first-of-type {
+  padding-top: 20%;
+  font-size: 4em;
+}
+.title-slide h1:first-of-type {
+  padding-top: 5%;
+  font-size: 4em;
+}
+.title-slide h1, .title-slide h2, .title-slide h3  {
+  color: #84ad68;
+  padding-left: 4%!important;
+}
+
+.title-slide .remark-slide-number { display: none; }
+
+.bg-main1 { background-color: var(--main-color1); color: var(--text-color1);}
+.bg-main2 { background-color: var(--main-color2); color: var(--text-color2);}
+.bg-main3 { background-color: var(--main-color3); color: var(--text-color3);}
+.bg-main4 { background-color: var(--main-color4); color: var(--text-color4);}
+.bg-main5 { background-color: var(--main-color5); color: var(--text-color5);}
+.bgcolor_alert { background-color: var(--alert-color)!important; color: var(--text-alert); }
+
+.color-main1 { color: var(--main-color1);}
+.color-main2 { color: var(--main-color2);}
+.color-main3 { color: var(--main-color3);}
+.color-main4 { color: var(--main-color4);}
+.color-main5 { color: var(--main-color5);}
+.color-alert { color: var(--alert-color);}
+
+.shade_main  {
+    background-color: var(--color-opacity70);
+    color: var(--text-opacity);
+    width: 100%;
+    padding: 0;
+}
+
+.remark-visible .remark-slide-scaler {overflow-y: auto;}
+.remark-code {
+  font-size: 20px;
+  line-height: 1.25;
+}
+
+.font-mono {
+  font-family: monospace;
+}
+
+
+.remark-code-line-highlighted { background-color: var(--code-highlight); }
+
+
+h1, h2, h3, body{
+  font-family: 'Arimo';
+  font-weight: normal;
+}
+.remark-code, .remark-inline-code {
+  font-family: 'Source Code Pro', 'Lucida Console', Monaco, monospace;
+  color: var(--code-inline-color);
+}
+.remark-code {
+  color: var(--code-text-color);
+  background-color: var(--code-background);
+}
+
+pre {
+  color: var(--code-text-color);
+  background-color: var(--code-background);
+  line-height: 1.5;
+  padding: 5px;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 400;
+    margin-bottom: 0;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+h1 { font-size: 3.5em; 
+    margin-left: 15px;
+    color: white;
+}
+h2 { font-size: 3em; 
+    margin-left: 20px;
+    color: #daedbb;
+}
+h3 { font-size: 1.6em; 
+    margin-left: 25px;
+    color: #daedbb;}
+h4 { font-size: 1em;  
+    margin-left: 25px;
+    color: #daedbb;}
+
+body{
+  font-size: 1em;
+    margin-left: 25px;
+}
+
+a { color: var(--link-color); text-decoration: none; }
+
+.pull-left {
+  float: left;
+  width: 47%;
+  padding-left: 5px;
+}
+.pull-right {
+  float: right;
+  width: 47%;
+  padding-left: 5px;
+}
+.pull-right ~ p {
+  clear: both;
+}
