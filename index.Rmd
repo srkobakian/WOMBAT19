@@ -51,8 +51,7 @@ class: bg-main1 split-30
 # Superisory Team
 <br>
 
-## Distinguished Professor
-## Kerrie Mengersen
+## Distinguished Professor Kerrie Mengersen
 
 <br>
 
