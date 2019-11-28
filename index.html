@@ -46,15 +46,15 @@ class: bg-main1 split-30
 # Superisory Team
 &lt;br&gt;
 
-## DProf. Kerrie Mengersen
+## Professor Kerrie Mengersen
 
 &lt;br&gt;
 
-## Dr. Earl Duncan 
+## Doctor Earl Duncan 
 
 &lt;br&gt;
 
-## Prof. Di Cook
+## Professor Di Cook
 
 ]
 
@@ -241,7 +241,7 @@ class: split-60 center
 [package: sf](https://cran.r-project.org/web/packages/sf/index.html)
 ]
 ]]
-.column.bg-main3[.content.middle[
+.column.bg-main4[.content.middle[
 &lt;br&gt;&lt;br&gt;
 
 #Features:
@@ -276,7 +276,7 @@ class: split-60 center
 ]
 
 ]]
-.column.bg-main3[.content.middle[
+.column.bg-main4[.content.middle[
 &lt;br&gt;&lt;br&gt;
 
 #Features:
@@ -305,7 +305,7 @@ class: split-60 center
 ]
 
 ]]
-.column.bg-main3[.content.middle[
+.column.bg-main4[.content.middle[
 &lt;br&gt;&lt;br&gt;
 
 #Features:
@@ -337,7 +337,7 @@ class: split-60 center
 ]
 
 ]]
-.column.bg-main3[.content.middle[
+.column.bg-main4[.content.middle[
 &lt;br&gt;&lt;br&gt;
 
 #Features:
@@ -440,7 +440,7 @@ class: split-60 center
 ]
 
 ]]
-.column.bg-main3[.content.middle[
+.column.bg-main4[.content.middle[
 &lt;br&gt;
 #Features:
 ### - Shapes are consistent
@@ -472,7 +472,7 @@ class: split-60 center
 ]
 
 ]]
-.column.bg-main3[.content.middle[
+.column.bg-main4[.content.middle[
 &lt;br&gt;&lt;br&gt;
 #Features:
 ### - Any visualisation can be drawn
@@ -723,6 +723,66 @@ class: bg-main2, center
 
 &lt;img src="figures/algorithm/tas_9end.png" width="1000px" /&gt;
 
+
+---
+
+class: split-50 bg-deep-green
+# Using sugarbag
+
+.left-code[
+
+### 1. Create centroids set
+
+```r
+centroids &lt;- create_centroids(
+   tas_sa2, 
+   "sa2_name_2011")
+```
+&lt;br&gt;
+### 2. Create hexagon grid
+
+```r
+grid &lt;- create_grid(
+   centroids = centroids, 
+   hex_size = 0.2, 
+   buffer_dist = 1.2)
+```
+]
+.pull-right[
+### 3. Allocate polygon centroids
+###  to the hexagon grid 
+
+
+```r
+allocated &lt;- allocate(
+   centroids = centroids,
+   sf_id = "sa2_name_2011",
+   hex_grid = grid,
+   hex_size = 0.2,
+   hex_filter = 1,
+   width = 30,
+   focal_points = capital_cities,
+   verbose = TRUE
+ )
+```
+]
+
+---
+
+class: bg-main2
+# Shortcut
+
+
+```r
+hexmap &lt;- create_hexmap(
+   shp = tas_sa2,
+   sf_id = "sa2_name_2011",
+   focal_points = capital_cities,
+   verbose = TRUE
+)
+```
+
+
 ---
 
 class: split-50 center
@@ -891,7 +951,7 @@ class: bg-deep-green
 ### Dr. Earl Duncan
 
 &lt;br&gt;&lt;br&gt;
-### created with xaringan &lt;i class="fas fa-user-ninja"&gt;&lt;/i&gt;
+### created with xaringan &lt;i class="fas fa-user-ninja"&gt;&lt;/i&gt; and [kunoichi](https://github.com/emitanaka/ninja-theme)
 
 ### scripts and data available [srkobakian](https://github.com/srkobakian)
 

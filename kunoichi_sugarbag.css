@@ -119,6 +119,24 @@ h1, h2, h3, body{
   background-color: var(--code-background);
 }
 
+
+.left-code {
+  float: left;
+  color: #777;
+  width: 45%;
+  padding-left: "50px";
+  padding-right: "50px";
+}
+.right-code ~ p {
+  clear: both;
+}
+.right-code {
+  float: left;
+  width: 45%;
+  padding-left: "50px";
+  padding-right: "50px";
+}
+
 pre {
   color: var(--code-text-color);
   background-color: var(--code-background);
