@@ -51,15 +51,16 @@ class: bg-main1 split-30
 # Superisory Team
 <br>
 
-## DProf. Kerrie Mengersen
+## Distinguished Professor
+## Kerrie Mengersen
 
 <br>
 
-## Dr. Earl Duncan 
+## Doctor Earl Duncan 
 
 <br>
 
-## Prof. Di Cook
+## Professor Di Cook
 
 ]
 
@@ -789,7 +790,7 @@ class: bg-main2, center
 
 # Using sugarbag
 .pull-left[
-
+# Scenic Route
 ```{r, echo = TRUE, eval = FALSE}
 # Create centroids set
 centroids <- create_centroids(tas_sa2, "sa2_name_2011")
@@ -818,9 +819,16 @@ allocated <- allocate(
 ```
 ]
 .pull-right[
-## - Choose closest point
-## - Angle maintains the spatial relationship
-
+# Shortcut
+```{r, echo = TRUE, eval = FALSE}
+# Create hexmap
+hexmap <- create_hexmap(
+   shp = tas_sa2,
+   sf_id = "sa2_name_2011",
+   focal_points = capital_cities,
+   verbose = TRUE
+)
+```
 ]
 
 ---
