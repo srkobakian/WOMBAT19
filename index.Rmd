@@ -612,9 +612,9 @@ knitr::include_graphics("figures/sugarbag.png")
 # Solutions:
 
 ## - Algorithm
-## - Focal points
-## - Buffering & angles 
 ## - Equally sized areas
+## - Focal points,
+##  buffering & angles 
 
 ]]
 ---
@@ -816,6 +816,7 @@ allocated <- allocate(
    hex_grid = grid,
    hex_size = 0.2,
    hex_filter = 1,
+   use_neighbours = tas_sa2,
    width = 30,
    focal_points = capital_cities,
    verbose = TRUE
@@ -833,6 +834,7 @@ class: bg-main2
 hexmap <- create_hexmap(
    shp = tas_sa2,
    sf_id = "sa2_name_2011",
+   neighbours = tas_sa2,
    focal_points = capital_cities,
    verbose = TRUE
 )
@@ -895,6 +897,16 @@ class: split-50 center
 
 ---
 
+class: bg-deep-green, center
+
+
+```{r, out.width = "700px", out.height = "700px", echo = FALSE}
+knitr::include_graphics("figures/melanoma_animation.gif")
+```
+
+---
+
+
 class: bg-black, center
 
 
@@ -915,6 +927,16 @@ Is this a better way to present data.
 Lineup protocol: 12 possible locations, one real data set 
 
 Pick the map that is most different?
+
+
+---
+
+class: bg-beep-green, center
+
+```{r, out.height = "350px", out.width="600px", echo = FALSE}
+knitr::include_graphics("figures/pilot/skobakian_design.png")
+
+```
 ---
 
 class: bg-black, center

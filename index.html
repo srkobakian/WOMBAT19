@@ -575,9 +575,9 @@ class: split-50
 # Solutions:
 
 ## - Algorithm
-## - Focal points
-## - Buffering &amp; angles 
 ## - Equally sized areas
+## - Focal points,
+##  buffering &amp; angles 
 
 ]]
 ---
@@ -760,6 +760,7 @@ allocated &lt;- allocate(
    hex_grid = grid,
    hex_size = 0.2,
    hex_filter = 1,
+   use_neighbours = tas_sa2,
    width = 30,
    focal_points = capital_cities,
    verbose = TRUE
@@ -777,6 +778,7 @@ class: bg-main2
 hexmap &lt;- create_hexmap(
    shp = tas_sa2,
    sf_id = "sa2_name_2011",
+   neighbours = tas_sa2,
    focal_points = capital_cities,
    verbose = TRUE
 )
@@ -839,6 +841,14 @@ class: split-50 center
 
 ---
 
+class: bg-deep-green, center
+
+
+&lt;img src="figures/melanoma_animation.gif" width="700px" height="700px" /&gt;
+
+---
+
+
 class: bg-black, center
 
 
@@ -859,6 +869,13 @@ Is this a better way to present data.
 Lineup protocol: 12 possible locations, one real data set 
 
 Pick the map that is most different?
+
+
+---
+
+class: bg-beep-green, center
+
+&lt;img src="figures/pilot/skobakian_design.png" width="600px" height="350px" /&gt;
 ---
 
 class: bg-black, center
