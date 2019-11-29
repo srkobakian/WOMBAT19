@@ -931,12 +931,15 @@ Pick the map that is most different?
 
 ---
 
-class: bg-beep-green, center
+class: bg-deep-green, center
 
-```{r, out.height = "350px", out.width="600px", echo = FALSE}
+# Experimental Design
+
+```{r, out.height = "450px", out.width="700px", echo = FALSE}
 knitr::include_graphics("figures/pilot/skobakian_design.png")
 
 ```
+
 ---
 
 class: bg-black, center
