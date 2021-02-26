@@ -18,9 +18,9 @@ output:
 class: bottom, right, title-slide
 
 
-<img src="figures/qut_crest.png" style="position:absolute;bottom:15px;right:20px;height:100px;width:100px;" />
+<img src="figures/qut_crest.png" style="position:absolute;top:15px;left:20px;height:100px;width:100px;" />
 
-<img src="figures/monash_crest.jpg" style="position:absolute;bottom:15px;right:150px;height:100px;width:100px;" />
+<img src="figures/monash_crest.jpg" style="position:absolute;top:15px;left:150px;height:100px;width:100px;" />
 
 ## An Australian alternative
 ## to choropleth maps;
@@ -28,7 +28,7 @@ class: bottom, right, title-slide
 ## disease data
 
 ### Stephanie Kobakian
-### [srkobakian](https://github.com/srkobakian) `r icon::fa_twitter()``r icon::fa_github()` 
+### [srkobakian](https://github.com/srkobakian) `r icon::fontawesome("twitter")``r icon::fontawesome("github")` 
 
 
 ```{r setup, include=FALSE}
@@ -302,7 +302,7 @@ knitr::include_graphics("figures/aus_ggcont.png")
 ### - Provide amount of iterations
 
 #Issue:
-### `r icon::fa_times()` May not complete within iteration limit
+### `r icon::fontawesome("times")` May not complete within iteration limit
 
 ]]
 ---
@@ -330,11 +330,11 @@ knitr::include_graphics("figures/aus_ggncont.png")
 #Features:
 ### - Shapes stay
 ### - Boundaries lose connections
-### `r icon::fa_check()` Completed transformation
+### `r icon::fontawesome("check")` Completed transformation
 
 
 #Issue:
-### `r icon::fa_times()` Cannot see the areas
+### `r icon::fontawesome("times")` Cannot see the areas
 
 ]]
 
@@ -364,11 +364,11 @@ knitr::include_graphics("figures/aus_ggdorl.png")
 #Features:
 ### - Shapes are consistent
 ### - Boundaries still touch
-### `r icon::fa_check()` Can see all the areas
+### `r icon::fontawesome("check")` Can see all the areas
 
 
 #Issue:
-### `r icon::fa_times()` Lost geographic reference
+### `r icon::fontawesome("times")` Lost geographic reference
 
 ]]
 
@@ -468,11 +468,11 @@ knitr::include_graphics("figures/ggtilegram.png")
 #Features:
 ### - Shapes are consistent
 ### - Boundaries may still touch
-### `r icon::fa_check()` Can see all the areas
-### `r icon::fa_check()` Maintains geographic reference
+### `r icon::fontawesome("check")` Can see all the areas
+### `r icon::fontawesome("check")` Maintains geographic reference
 
 #Issue:
-### `r icon::fa_times()` Hand drawn grid
+### `r icon::fontawesome("times")` Hand drawn grid
 
 ]]
 
@@ -502,11 +502,11 @@ knitr::include_graphics("figures/ggfacet.png")
 #Features:
 ### - Any visualisation can be drawn
 ### - Boundaries may still touch
-### `r icon::fa_check()` Can see all the areas
-### `r icon::fa_check()` Maintains geographic reference
+### `r icon::fontawesome("check")` Can see all the areas
+### `r icon::fontawesome("check")` Maintains geographic reference
 
 #Issue:
-### `r icon::fa_times()` Hand drawn grid
+### `r icon::fontawesome("times")` Hand drawn grid
 
 ]]
 
@@ -705,7 +705,7 @@ knitr::include_graphics("figures/algorithm/tas_3buffer.png")
 class: bg-main2, center, middle
 
 # Set up completed 
-# `r icon::fa_check()`
+# `r icon::fontawesome("check")`
 # Ready to allocate
 
 ---
@@ -1039,5 +1039,5 @@ class: bg-deep-green
 ### sugarbag maps [srkobakian/sugarbag](https://github.com/srkobakian/sugarbag)
 
 <br><br>
-#### This work is under licensed [`r icon::fa("creative-commons")` BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
+#### This work is under licensed [`r icon::fontawesome("creative-commons")` BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
 
